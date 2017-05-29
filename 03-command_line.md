@@ -20,7 +20,31 @@ Here's a list of items with which you should be familiar:
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
 > > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+* pwd
+* mkdir directoryName
+* rm -r directoryName
+* touch filename.et\xt
+* rm filename.ext
+* mv originFile.ext destinationFile.ext
+* ls -a
+* cp originFile.ext directoryPath/destinationFile.ext
+* display contents of a file
+    * cat filename.ext
+* redirect output of command to file
+    * cat originFile.ext > destinationFile.ext
+* redirect output (append) of command to file
+    * cat originFile.ext >> destinationFile.ext
+* sort file lines
+    * sort fileName.ext
+* redirects output of command to input of another command
+    * cat fileName.ext | sort > sorted-fileName.ext
+* deletes adjacent repeated lines
+    * unique fileName.ext
+* find and replace
+    * sed 's/findString/replaceString/' fileName.txt
+    * find and replace all instances in a line
+        * sed 's/findString/replaceString/g' fileName.txt
+    
 ---
 
 ### Q2.  List Files in Unix   
