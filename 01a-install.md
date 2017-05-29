@@ -48,14 +48,14 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> PYTHON 3
+>> PYTHON 3  
 >> Going with the recommended version to avoid version and configuration issues.
 
 ### Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> On the command prompt type:
+>> On the command prompt type:  
 >> python --version
 
  
