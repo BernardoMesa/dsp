@@ -60,6 +60,8 @@ What do the following commands do:
 `ls -Glp`  
 
 > > 
+Command | Description
+-- | --
 ls | list contents of directory
 -- | --
 ls -a | include hidden directories
@@ -81,6 +83,9 @@ ls -Glp | lists long format (suppreses owner) and adds a '/' at the end of direc
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
 > > 
+
+Command | Description
+-- | --
 -m | displays names as comma separated list
 -- | --
 -r | displays files in reverse order
