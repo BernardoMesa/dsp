@@ -59,7 +59,7 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
 * list contents of directory
 * include hidden directories
 * use long format/permissions
@@ -74,7 +74,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+-m | displays names as comma separated list
+-- | --
+-r | displays files in reverse order
+-- | --
 
 ---
 
