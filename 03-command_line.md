@@ -19,7 +19,7 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > CHEAT SHEET
 * pwd
 * mkdir directoryName
 * rm -r directoryName
@@ -40,7 +40,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
     * cat fileName.ext | sort > sorted-fileName.ext
 * deletes adjacent repeated lines
     * unique fileName.ext
-* find and replace
+* find and replace first instance
     * sed 's/findString/replaceString/' fileName.txt
     * find and replace all instances in a line
         * sed 's/findString/replaceString/g' fileName.txt
@@ -50,6 +50,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 ### Q2.  List Files in Unix   
 
 What do the following commands do:  
+
 `ls`  
 `ls -a`  
 `ls -l`  
@@ -59,6 +60,13 @@ What do the following commands do:
 `ls -Glp`  
 
 > > REPLACE THIS TEXT WITH YOUR RESPONSE
+* list contents of directory
+* include hidden directories
+* use long format/permissions
+* include long format and readable file size
+* include hidden directories, use long format and readable file size
+* list contents sorted by time and date
+* lists long format (suppreses owner) and adds a '/' at the end of directories
 
 ---
 
