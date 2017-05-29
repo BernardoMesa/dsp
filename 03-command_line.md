@@ -60,13 +60,19 @@ What do the following commands do:
 `ls -Glp`  
 
 > > 
-* list contents of directory
-* include hidden directories
-* use long format/permissions
-* include long format and readable file size
-* include hidden directories, use long format and readable file size
-* list contents sorted by time and date
-* lists long format (suppreses owner) and adds a '/' at the end of directories
+ls | list contents of directory
+-- | --
+ls -a | include hidden directories
+-- | --
+ls -l | use long format/permissions
+-- | --
+ls -lh | include long format and readable file size
+-- | --
+ls -lah | include hidden directories, use long format and readable file size
+-- | --
+ls -t | list contents sorted by time and date
+-- | --
+ls -Glp | lists long format (suppreses owner) and adds a '/' at the end of directories
 
 ---
 
@@ -79,6 +85,12 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 -- | --
 -r | displays files in reverse order
 -- | --
+-R | displays subdirectories
+-- | --
+-x | diplays files as rows across
+-- | --
+-d | displays only directories
+
 
 ---
 
@@ -86,7 +98,8 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > It is a command on Unix and Unix-like operating systems used to build and execute command lines from standard input.  
+$ echo 1 2 3 4 | xargs -n 2
 
  
 
