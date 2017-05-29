@@ -81,7 +81,7 @@ Upload these 3 files to the [`editors`](editors/) folder.
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
->> VIM will be my editor of choice. I remember using it when in engineering school.
+>> VIM will be my editor of choice. I used it while at engineering school.
 
 --
 
@@ -89,6 +89,5 @@ What terminal editor will be your preferred choice of use? How did you make your
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+>> I might end up using Sublime. I have seen other people use it, and apparently it can emulate Vim so re-learning Vim should be helpful when using Sublime. You customize Sublime by either modifying the settings files (which have a .sublime-settings extension) and save these files in the \Packages\User directory to prevent them being overiden during updates.
  
