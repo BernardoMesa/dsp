@@ -34,8 +34,22 @@ Finding an element in a set (or a 'key' in a dictionary) is very fast because it
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> `lambda` are anonymous functions restricted to a single expression. They can be used wherever a function object is required. Also, they can access variables within the current/containing scope.
 
+Ex.1
+>>> g = lambda x: x**2
+>>> print g(2)
+4
+
+Ex.2
+>>> print map(lambda w: len(w), 'It is raining cats and dogs'.split())
+[2, 2, 7, 4, 3, 4]
+
+Ex.3
+>>> pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]
+>>> pairs.sort(key=lambda pair: pair[1])
+>>> pairs
+[(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]
 ---
 
 ### Q4. List Comprehension, Map &amp; Filter
