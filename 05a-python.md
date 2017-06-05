@@ -56,7 +56,14 @@ Ex.3
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions are a tool to transform one list into another list.
+It is similar to using a filter and then a map in functional programming
+
+Ex.1
+>>> numbers =  [1,2,3,4,5,6]
+>>> doubled_odds = map(lambda n: n * 2, filter(lambda n: n % 2 == 1, numbers))
+is equivalent to:
+>>> doubled_odds = [n * 2 for n in numbers if n % 2 == 1]
 
 ---
 
