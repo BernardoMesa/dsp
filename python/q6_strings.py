@@ -47,6 +47,7 @@ def both_ends(s):
     else:
         both_ends = s[0:2] + s[-2:]
 
+    return both_ends
 
 
 def fix_start(s):
