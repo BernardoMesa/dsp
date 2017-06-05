@@ -21,9 +21,8 @@ def donuts(count):
     if count > 9:
         print('Number of donuts: many')
     else:
-        print('Number of dounts: %d', count)
+        print("Number of donuts: %d" % count)
 
-    #raise NotImplementedError
 
 
 def both_ends(s):
@@ -48,7 +47,6 @@ def both_ends(s):
     else:
         both_ends = s[0:2] + s[-2:]
 
-    #raise NotImplementedError
 
 
 def fix_start(s):
@@ -88,8 +86,7 @@ def mix_up(a, b):
     'fizzy perm'
     """
     
-    return a[1::-1] + a[2:] + " " + b[1::-1] + b[2:]
-    #raise NotImplementedError
+    return b[0:2] + a[2:] + " " + a[0:2] + b[2:]
 
 
 def verbing(s):
@@ -106,8 +103,15 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
+
+    if len(s)>2:
+        if s[-3:]!='ing':
+            s = s + 'ing'
+        else:
+            s = s + 'ly'
+
+    return s
     
-    #raise NotImplementedError
 
 
 def not_bad(s):
@@ -128,8 +132,15 @@ def not_bad(s):
     "It's bad yet not"
     """
     
+    not_pos = s.find('not')
+    bad_pos = s.find('bad')
 
-    #raise NotImplementedError
+    if  not_pos!=-1 and bad_pos!=-1:
+        if not_pos<bad_pos:
+            s= s[0:not_pos] + "good" + s[bad_pos+3:]
+
+    return s
+
 
 
 def front_back(a, b):
@@ -149,5 +160,28 @@ def front_back(a, b):
     'KitDontenut'
     """
 
+    import math
+    
+    a_len = len(a)
+    b_len = len(b)
 
-    #raise NotImplementedError
+    if a_len%2==0:
+        a_pos = a_len/2
+    else:
+        a_pos = math.ceil(a_len/2)
+
+    a_pos = int(a_pos)
+
+    if b_len%2==0:
+        b_pos = b_len/2
+    else:
+        b_pos = math.ceil(b_len/2)
+
+    b_pos = int(b_pos)
+
+
+    return a[0:a_pos] + b[0:b_pos] + a[a_pos:] + b[b_pos:]
+
+
+
+
