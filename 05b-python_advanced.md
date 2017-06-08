@@ -21,6 +21,24 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 
 >> REPLACE THIS WITH YOUR RESPONSE
 
+import re
+
+fhand = fopen('faculty.csv')
+
+d = dict()
+
+for line in fhand:
+	line = line.rstrip()
+	flds = line.split(',')
+	degree = flds[2]
+	title = flds[3]
+	d[degree] = d.get(degree,0)+1
+	t[title] = t.get(title,0)+1
+
+emails = re.findall('[a-zA-Z0-9]\S*@\S*[a-zA-Z]')
+print(emails)
+
+
 
 #### Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
 
@@ -30,11 +48,20 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 #### Q3. Search for email addresses and put them in a list.  Print the list of email addresses.
 
 >> REPLACE THIS WITH YOUR RESPONSE
+x = re.findall('[a-zA-Z0-9]\S*@\S*[a-zA-Z]')
+print(x)
 
 
 #### Q4. Find how many different email domains there are (Ex:  mail.med.upenn.edu, upenn.edu, email.chop.edu, etc.).  Print the list of unique email domains.
 
 >> REPLACE THIS WITH YOUR RESPONSE
+dom = list[]
+for i in x:
+	pieces = i.split('@')
+	if pieces[1] in dom: continue
+	dom.append(pieces[1])
+
+
 
 Place your code in this file: [advanced_python_regex.py](python/advanced_python_regex.py)
 
@@ -57,6 +84,12 @@ bryanma@upenn.edu
 
 ---
 
+fout = open('emails.csv','w')
+for email in emails:
+    fout.write(email + '\n')
+
+
+
 ### Part III - Dictionary
 
 #### Q6.  Create a dictionary in the below format:
@@ -65,6 +98,27 @@ faculty_dict = { 'Ellenberg': [['Ph.D.', 'Professor', 'sellenbe@upenn.edu'], ['P
               'Li': [['Ph.D.', 'Assistant Professor', 'liy3@email.chop.edu'], ['Ph.D.', 'Associate Professor', 'mingyao@mail.med.upenn.edu'], ['Ph.D.', 'Professor', 'hongzhe@upenn.edu']]}
 ```
 Print the first 3 key and value pairs of the dictionary:
+
+import re
+
+fhand = fopen('faculty.csv')
+
+d = dict()
+
+for line in fhand:
+	line = line.rstrip()
+	flds = line.split(',')
+	data = [flds[2],flds[3],flds[4]]
+	#degree = flds[2]
+	#title = flds[3]
+	#email = flds[4]
+
+	surname = r.findall('[a-zA-Z0-9]\S*$')
+	if d.has_key(surname):
+		d[surname] = d.get(surname,[]).append(data)
+	#t[title] = t.get(title,0)+1
+
+
 
 >> REPLACE THIS WITH YOUR RESPONSE
 

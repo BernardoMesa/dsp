@@ -61,9 +61,20 @@ It is similar to using a filter and then a map in functional programming
 
 Ex.1
 >>> numbers =  [1,2,3,4,5,6]
->>> doubled_odds = map(lambda n: n * 2, filter(lambda n: n % 2 == 1, numbers))
+>>> doubled_odds = map(lambda n: n * 2, filter(lambda n: n % 2 == 1, numbers))
+
 is equivalent to:
 >>> doubled_odds = [n * 2 for n in numbers if n % 2 == 1]
+
+Any foor loop can b
+
+Ex.2 Set comprehensions
+>>> names = [ 'Bob', 'JOHN', 'alice', 'bob', 'ALICE', 'J', 'Bob' ]
+>>> { name[0].upper() + name[1:].lower() for name in names if len(name) > 1 }
+
+Ex.3 Dictionary comprehensions
+>>> mcase = {'a':10, 'b': 34, 'A': 7, 'Z':3}
+>>> { k.lower() : mcase.get(k.lower(), 0) + mcase.get(k.upper(), 0) for k in mcase.keys() }
 
 ---
 
@@ -78,7 +89,14 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> from datetime import datetime
+date_format = "%m-%d-%Y"
+a = datetime.strptime(date_start, date_format)
+b = datetime.strptime(date_stop, date_format)
+delta = b - a
+print(delta.days)
+
+
 
 b.  
 ```
@@ -94,7 +112,12 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE  (answer will be in number of days)
+>> from datetime import datetime
+date_format = "%d-%b-%Y"
+a = datetime.strptime(date_start, date_format)
+b = datetime.strptime(date_stop, date_format)
+delta = b - a
+print(delta.days)
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
