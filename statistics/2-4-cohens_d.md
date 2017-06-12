@@ -9,7 +9,7 @@ Cohen's d:  -0.0691182534882
 The effect size is small
 
 Effect size |d | Reference
-------      ---  ------ 
+------ | --- | ------ 
 Very small |0.01 | Sawilowsky, 2009
 Small |0.20 |Cohen, 1988
 Medium |0.50 |Cohen, 1988
