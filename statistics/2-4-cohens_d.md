@@ -3,13 +3,18 @@
 >> REPLACE THIS TEXT WITH YOUR RESPONSE
 
 
-Firsts mean:  7.204107733975324
-Others mean:  7.301399825021872
-Cohen's d:  -0.0691182534882
-The effect size is small
+#Results  
+
+Firsts mean:  7.204107733975324  
+Others mean:  7.301399825021872  
+Cohen's d:  -0.0691182534882  
+The effect size is small  
+
+----------
+
 
 Effect size |d | Reference
------- | --- | ------ 
+------      ---  ------ 
 Very small |0.01 | Sawilowsky, 2009
 Small |0.20 |Cohen, 1988
 Medium |0.50 |Cohen, 1988
@@ -17,6 +22,9 @@ Large |0.80 |Cohen, 1988
 Very large |1.20 |Sawilowsky, 2009
 Huge |2.0 |Sawilowsky, 2009
 
+----------
+
+``` Python
 import numpy as np
 import nsfg
 import first
@@ -48,3 +56,6 @@ print('Others mean: ', others.totalwgt_lb.mean())
 
 cohen_d = ces(firsts.totalwgt_lb,others.totalwgt_lb)
 
+print('Cohen's d', cohen_d)
+
+```
