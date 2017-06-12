@@ -14,13 +14,14 @@ The effect size is small
 
 
 Effect size |d | Reference
-------      ---  ------ 
+------ |--- |------ 
 Very small |0.01 | Sawilowsky, 2009
 Small |0.20 |Cohen, 1988
 Medium |0.50 |Cohen, 1988
 Large |0.80 |Cohen, 1988
 Very large |1.20 |Sawilowsky, 2009
 Huge |2.0 |Sawilowsky, 2009
+
 
 ----------
 
