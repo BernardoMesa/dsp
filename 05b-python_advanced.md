@@ -33,7 +33,7 @@ for line in fhand:
 	degree = flds[2]
 	title = flds[3]
 	d[degree] = d.get(degree,0)+1
-	t[title] = t.get(title,0)+1
+	t[title] = t.get(title,0)+1	
 
 emails = re.findall('[a-zA-Z0-9]\S*@\S*[a-zA-Z]')
 print(emails)
