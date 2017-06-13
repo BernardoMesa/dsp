@@ -4,7 +4,9 @@
 
 #Number of kids in a household
 
+
 Unbiased:  1.02420515504  
+
 Biased:  2.40367910066  
 
 ```python
