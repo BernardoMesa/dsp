@@ -2,7 +2,7 @@
 
 >> REPLACE THIS TEXT WITH YOUR RESPONSE
 
-#Number of kids in a household
+# Number of kids in a household
 
 
 Unbiased:  1.02420515504  
