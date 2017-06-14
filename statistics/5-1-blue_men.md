@@ -2,6 +2,7 @@
 
 >> REPLACE THIS TEXT WITH YOUR RESPONSE
 
+34% of the population is between 5'10 and 6'1 tall.  
 
 ``` python
 import scipy.stats
