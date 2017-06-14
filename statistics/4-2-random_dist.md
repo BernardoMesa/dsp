@@ -2,7 +2,7 @@
 
 >> REPLACE THIS TEXT WITH YOUR RESPONSE
 
-Since each element in the random vector is unique, the pdf of the distribution has height 1/1000 (1000 elements in vector) indicating the probability of picking that element from the vector is 1 in 1000.
+Since each element in the random vector is unique, the pdf of the distribution has height 1/1000 (1000 elements in vector) indicating the probability of picking that element from the vector is 1 in 1000. The pmf should have height 1 from [0,1]
 
 ``` python
 num = np.random.random(1000)
