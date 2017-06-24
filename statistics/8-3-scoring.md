@@ -5,7 +5,7 @@
 >> This way of making an estimate is not biased since the MSE  
 tends to zero as the number of experiments increases.  
 The standard error seems to converge to the square root of  
-lambda.
+lambda.  
 As lambda increases the standard error tends to increase.
 
 ``` Python
