@@ -1,15 +1,17 @@
 [Think Stats Chapter 6 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2007.html#toc60) (household income)
 
->> Income distribution is skewed to the right as indicated by both a  
-positive sample skewness and a positive Pearson Median Skewness.  
+>> Income distribution is skewed to the right as indicated by a  
+positive sample skewness, a positive Pearson Median Skewness, and  
+a sample mean being greater than the sample median.
 
 Income mean, skewness and fraction of households under the mean increases  
 as the upper bound on income increases.  
 
 Pearson median skewness decreases but remains positive as the upper bound  
 on income increases. This occurs because this statistic is more robust  
-to outliers and as the higher incomes are linearly spreaded over a larger  
-income bucket, they start to appear as outliers in the distribution.  
+to outliers. Increasing the upper bound on the highest incomes, spreads  
+these incomes log linearly over an increasing range making these incomes  
+appear as outliers in the sample.  
 
 
 ``` Python
