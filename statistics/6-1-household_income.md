@@ -9,9 +9,9 @@ as the upper bound on income increases.
 
 Pearson median skewness decreases but remains positive as the upper bound  
 on income increases. This occurs because this statistic is more robust  
-to outliers. Increasing the upper bound on the highest incomes, spreads  
-these incomes log linearly over an increasing range making these incomes  
-appear as outliers in the sample.  
+to outliers. Increasing the upper bound on the highest incomes spreads  
+these incomes log-linearly over an increasingly larger range making these  
+incomes increasingly appear as outliers in the sample.  
 
 
 ``` Python
