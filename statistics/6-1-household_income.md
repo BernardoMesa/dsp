@@ -4,9 +4,12 @@
 positive sample skewness and a positive Pearson Median Skewness.  
 
 Income mean, skewness and fraction of households under the mean increases  
-as the upper bound  on income increases.  
+as the upper bound on income increases.  
+
 Pearson median skewness decreases but remains positive as the upper bound  
-on idfadfncome increases because these incomes start behaving as outliers.  
+on income increases. This occurs because this statistic is more robust  
+to outliers and as the higher incomes are linearly spreaded over a larger  
+income bucket, they start to appear as outliers in the distribution.  
 
 
 ``` Python
