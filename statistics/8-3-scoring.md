@@ -6,7 +6,8 @@
 tends to zero as the number of experiments increases.  
 The standard error seems to converge to the square root of  
 lambda.  
-As lambda increases the standard error tends to increase.
+As lambda increases the MSE seems to increase for a given  
+number of experiments.
 
 ``` Python
 
